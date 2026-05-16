@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز موعد - Vibe Code</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Cairo', sans-serif; } </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen flex flex-col justify-between">
+    <nav class="border-b border-slate-800 bg-[#0f172a]/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-black bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">⚡ CAR TECH</span>
+            <div class="flex gap-6 font-medium text-sm">
+                <a href="index.html" class="text-slate-400 hover:text-white transition">الرئيسية</a>
+                <a href="services.html" class="text-slate-400 hover:text-white transition">الخدمات</a>
+                <a href="contact.html" class="text-blue-400 border-b-2 border-blue-400 pb-1">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-md mx-auto px-6 py-12 w-full flex-grow flex items-center">
+        <div class="bg-slate-900/40 p-8 rounded-3xl border border-slate-800 shadow-2xl w-full">
+            <h2 class="text-xl font-bold text-white mb-2 text-center">بوابة الحجز الفوري</h2>
+            <p class="text-slate-400 text-xs text-center mb-6">املأ البيانات ليتم مراجعة طلب الفحص برمجياً</p>
+            <form onsubmit="event.preventDefault(); alert('تم إرسال الإشارات بنجاح!');" class="space-y-4 text-sm">
+                <div>
+                    <label class="block text-slate-400 mb-1 text-xs">اسم المستفيد</label>
+                    <input type="text" required class="w-full bg-[#0b101d] border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:border-blue-500 transition">
+                </div>
+                <div>
+                    <label class="block text-slate-400 mb-1 text-xs">طراز السيارة والموديل</label>
+                    <input type="text" placeholder="مثال: رينو فلوينس 2014" class="w-full bg-[#0b101d] border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:border-blue-500 transition">
+                </div>
+                <div>
+                    <label class="block text-slate-400 mb-1 text-xs">الأعراض الظاهرة (الخلل)</label>
+                    <textarea rows="3" required placeholder="مثال: نتفة بالكير أو لمبة Check Engine شغالة..." class="w-full bg-[#0b101d] border border-slate-800 rounded-xl p-3 text-white focus:outline-none focus:border-blue-500 transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl transition shadow-lg shadow-blue-600/10 text-xs mt-2">إرسال تشخيص أولي</button>
+            </form>
+        </div>
+    </main>
+    <footer class="border-t border-slate-800/60 py-6 text-center text-xs text-slate-500 bg-[#0b0f19]">
+        <p>تم التطوير بواسطة نظام الـ Vibe Coding الذكي | مادة تصميم المواقع 2026</p>
+    </footer>
+</body>
+</html>
